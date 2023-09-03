@@ -1,0 +1,84 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>管理员界面</title>
+	<style>
+		.maintitle{position:absolute;left:0;top:0;width:200px;height:100%;line-height:60px;text-align:center;color:#009688;font-size:16px; text-align: center;font-weight:bold}
+		.list{
+			width:100px;
+			height: 100%;
+			position:absolute;
+			background: #D4D4D4;
+			text-align: left;
+			margin: 0 auto;
+
+		}
+		.subtitle
+		{display:block;width:100%;line-height:45px}
+
+		.subtitle a{position:relative;height:45px;line-height:45px;text-overflow:ellipsis;overflow:hidden;white-space:nowrap}
+
+		.subtitle
+		{
+			font-size:16px;
+			font-weight:bold;
+			text-align:center;
+			font-family: 微软雅黑;
+		}
+		.list{position:relative;width:220px;height:100%;overflow-x:hidden}
+		a:link {color: gray;}     /* 未访问的链接 */
+		a:visited {color: gray}  /* 已访问的链接 */
+		a:hover {color: gray}    /* 当有鼠标悬停在链接上 */
+		a:active {color: gray}   /* 被选择的链接 */
+		a{
+			text-decoration : none;
+			font-size: 15px;
+			font-family: 幼圆;
+		}
+		* {
+			margin: 0;
+			padding: 0;
+		}
+
+	</style>
+</head>
+<body>
+<table>
+	<tr>
+		<td class="list" rowspan="0">
+
+			<span class="maintitle">管理员菜单</span>
+			<br>
+			<br>
+			<span class="subtitle">订单管理
+         <br>
+         <a href="showBill.php" target="scrshow">修改订单状态</a></span>
+			<br/>
+			<br>
+			<span class="subtitle">商品分类管理
+         <br>
+         <a href="addType.php" target="scrshow">增加分类</a>
+         <br/>
+         <a href="ManageType.php" target="scrshow">管理分类</a>
+         </span>
+			<br>
+			<br>
+			<span class="subtitle">商品管理
+         <br>
+         <a href="addGood.php" target="scrshow">添加电器</a>
+         <br/>
+         <a href="ManageGood.php" target="scrshow">管理电器</a>
+         </span>
+			<br/>
+
+
+		</td>
+		<td rowspan="0">
+			<iframe src="addGood.php" frameborder="0" name="scrshow"  height="99%" width="94%" scrolling="auto" style="position: absolute;margin-left:100px;"></iframe>
+		</td>
+	</tr>
+</table>
+</body>
+</html>
